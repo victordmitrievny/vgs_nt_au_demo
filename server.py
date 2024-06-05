@@ -109,10 +109,7 @@ def enroll_account_updater(card_holder, card_number_token, card_exp_month, card_
         "number": card_number_token,
         "exp_month": card_exp_month,
         "exp_year": card_exp_year,
-        "merchant": {
-            "sub_merchant_name": "Demo Org",
-            "vgs_merchant_id": VGS_MERCHANT_ID_AU
-                        },
+        "merchant": {"vgs_merchant_id": VGS_MERCHANT_ID_AU},
     }
 
     return post_request(url, headers, payload, proxy)
